@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background:  center/cover, black;
+    background-blend-mode: multiply;
+    transition: background-image 1s ease-in-out;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+.center{
+    height: 50vh;
+}
+.footer{
+    height: 30vh;
+}
+.container{}
+
+
+.slider_next{
+    position: relative;
+    background: url("img/svg/slider-next.svg");
+    right: 70%;
+}
+
+.slider_prev{
+    position: relative;
+    background: url("img/svg/slider-prev.svg");
+    right: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.slider-icon{
+    width: 62px;
+    height: 62px;
+    background-size: 52px 52px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    opacity: .8;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.slider_next:active{
+    transition: .5s;
+    right: 30%;
+}
+
+.slider_prev:active{
+    transition: .5s;
+    right: 50%;
+}
+
+#id_clock{
+    font-size:46pt;
+}
+
+.footer, .quotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.generator{
+    background: url("img/svg/reload.svg");
+    margin-bottom: 30px;
+}
+
+.change-quote{
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.change-quote:active{
+    transform: rotate(180deg);
+}
+.quota{
+    font-size: 18px;
+    max-width: 60%;
+    text-shadow: 0 0 5px #100909, 0 0 5px #000000;
+}
+
+.author{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #100909, 0 0 5px #000000;
+}
+
+.quota, .author{
+    min-width: 250px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+
+
+.play-prev {
+    background-image: url(img/svg/play-prev.svg);
+}
+.play-next{
+    background-image: url(img/svg/play-next.svg);
+}
+.pause{
+    background-image: url(img/svg/pause.svg)!important;
+}
+
+.play{
+    background-image: url(img/svg/play.svg);
+}
+
+.center_music{
+    width: 64px !important;
+    height: 64px !important;
+    background-size: 64px 64px !important;
+}
+
+
+.player-icon{
+    width: 54px;
+    height: 54px;
+    background-size: 54px 54px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-shadow: 0 0 5px #100909, 0 0 5px #000000;
+}
+
+.time_text{
+    font-size: 24px;
+}
+iframe{
+    max-height: 20vh;
+    max-width: 58%;
+}
+
+
+
+.clock{
+    margin-right: 10px;
+}
+
+.player{
+    height: 10vh;
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    height: 110px;
+    width: 110px;
+    background:  no-repeat center url("img/16636.png");
+    background-size: cover;
+}
+
+.name{
+    font-size: 24px;
+}
+
+.profile{
+    display: flex;
+}
+
+.opys{
+    margin-top: 15px;
+}
+
+.new_tasks{
+    height: 45px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloack_tosk{
+    height: 100%;
+    width: 30vw;
+}
+.task_block_text{
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+    color: #E0C9BC;
+}
+
+.icon2{
+    font-size: 40px;
+    color: #E0C9BC;
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.fa-rectangle-xmark{
+    font-size: 40px;
+    padding-right: 10px;
+    color: #E0C9BC;
+    cursor: pointer;
+}
+
+
+
+
+.fa-square-plus:active{
+    color: #A28887;
+}
+
+.fa-square-check{
+    padding-left: 5px;
+}
+
+.task{
+    display: flex;
+    padding: 10px;
+}
+
+.task_text{
+    width: 220px;
+    height: 34px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    text-shadow: 0 0 5px #100909, 0 0 5px #000000;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
