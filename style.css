@@ -24,6 +24,8 @@ body{
 }
 .footer{
     height: 30vh;
+    position: absolute;
+    width: 100%;
 }
 .container{}
 
@@ -232,11 +234,16 @@ iframe{
     padding-right: 6px;
 }
 
-.fa-rectangle-xmark{
+.icon2:last-child{
     font-size: 40px;
     padding-right: 10px;
     color: #E0C9BC;
     cursor: pointer;
+}
+
+.line_through{
+    text-decoration: line-through;
+    text-decoration-color: #E0C9BC;
 }
 
 
@@ -246,7 +253,7 @@ iframe{
     color: #A28887;
 }
 
-.fa-square-check{
+.icon2:nth-child(2){
     padding-left: 5px;
 }
 
@@ -256,7 +263,7 @@ iframe{
 }
 
 .task_text{
-    width: 220px;
+    width: 260px;
     height: 34px;
     padding: 5px;
     font-size: 20px;
@@ -267,6 +274,12 @@ iframe{
     text-shadow: 0 0 5px #100909, 0 0 5px #000000;
     border-bottom: 1px solid #fff;
     background-color: transparent;
+}
+
+
+.slider_tuda_suda{
+    position: fixed;
+    right: 0px;
 }
 
 

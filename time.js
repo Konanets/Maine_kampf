@@ -17,34 +17,23 @@ function digitalClock() {
 }
 digitalClock();
 
+document.getElementById('quota').addEventListener("click", change_quote);
+function change_quote(quotes) {
 
-
-
-let requestURL = 'package.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL)
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-    let quotes = request.response;
-    document.getElementById('quota').addEventListener("click",change_quote);
-    change_quote();
-
-    function change_quote(){
-        let quote_text=document.querySelector('.quota');
-        let quote_author=document.querySelector('.author');
-        let rand_num=random(quotes.quotes.length)
-        quote_text.innerHTML=quotes.quotes[rand_num].text;
-        quote_author.innerHTML=quotes.quotes[rand_num].author;
-    }
-
+    //https://type.fit/api/quotes
+    //package.json
+    fetch('https://type.fit/api/quotes').then(text => text.json()).then(quotes => {
+        let quote_text = document.querySelector('.quota');
+        let quote_author = document.querySelector('.author');
+        let rand_num = random(quotes.length)
+        quote_text.innerHTML = quotes[rand_num].text;
+        quote_author.innerHTML = quotes[rand_num].author;
+    })
     function random(lenz){
         return Math.floor(Math.random()*(lenz-1));
     }
 }
-
-
+change_quote();
 
 
 
