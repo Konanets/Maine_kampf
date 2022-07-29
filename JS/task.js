@@ -4,7 +4,7 @@ function load_task_data(){
     ul.innerHTML=localStorage.getItem('tasks');
     let arr_li=document.querySelectorAll('ul>li.task');
    arr_li.forEach(task=>{
-       task.children[0].addEventListener('keydown',store_to_locale)
+       task.children[0].addEventListener('keyup',store_to_locale)
        task.children[1].addEventListener('click',readable_on_off);
        task.children[2].addEventListener('click',done_task);
        task.children[3].addEventListener('click',minus_task);

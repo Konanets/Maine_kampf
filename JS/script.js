@@ -14,8 +14,8 @@ function setBg(link) {
             document.getElementById('backgr').style.backgroundSize='cover';
         };
 }
-
-setBg(background_photos[0]);
+//https://raw.githubusercontent.com/Konanets/Photos/master/1.jpg
+setBg("https://raw.githubusercontent.com/Konanets/Photos/master/1.jpg");
 document.querySelector('.slider_next').addEventListener('click',next_prev);
 document.querySelector('.slider_prev').addEventListener('click',next_prev)
 

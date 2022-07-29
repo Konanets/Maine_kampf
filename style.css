@@ -21,6 +21,8 @@ body{
 }
 .center{
     height: 50vh;
+    display: flex;
+    justify-content: space-between;
 }
 .footer{
     height: 30vh;
@@ -108,14 +110,14 @@ body{
     transform: rotate(180deg);
 }
 .quota{
-    font-size: 18px;
+    font-size: 16px;
     max-width: 60%;
     text-shadow: 0 0 5px #100909, 0 0 5px #000000;
 }
 
 .author{
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-shadow: 0 0 5px #100909, 0 0 5px #000000;
 }
@@ -279,9 +281,49 @@ iframe{
 
 .slider_tuda_suda{
     position: fixed;
-    right: 0px;
+    right: 0;
 }
 
+li{
+    list-style-type: none;
+}
+
+.tools_block{
+    padding: 10px;
+    height: 320px;
+    width: 90px;
+}
+.tools{
+    border: 2px solid #E0C9BC;
+    border-radius: 10px;
+}
+
+.display_falsz{
+    display: none;
+}
+
+.weather_block{
+    height: 320px;
+    width: 300px;
+}
+
+.weather{
+    margin-right: 10px;
+    display: flex;
+}
+
+.city {
+    width: 190px;
+    height: 34px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
 
 
 
