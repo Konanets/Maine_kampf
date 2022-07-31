@@ -21,8 +21,7 @@ document.getElementById('quota').addEventListener("click", change_quote);
 function change_quote(quotes) {
 
     //https://type.fit/api/quotes
-    //package.json
-    fetch('https://type.fit/api/quotes').then(text => text.json()).then(quotes => {
+    fetch('quotes.json').then(text => text.json()).then(quotes => {
         let quote_text = document.querySelector('.quota');
         let quote_author = document.querySelector('.author');
         let rand_num = random(quotes.length)
