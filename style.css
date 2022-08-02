@@ -29,7 +29,9 @@ body{
     position: absolute;
     width: 100%;
 }
-.container{}
+.container{
+    width: 100%;
+}
 
 
 .slider_next{
@@ -323,6 +325,258 @@ li{
     outline: 0;
     border-bottom: 1px solid #fff;
     background-color: transparent;
+}
+
+.header-container {
+    left: 0; right: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: #168DE2;
+    border-bottom: 1px solid #ddd;
+    min-width: 60%;
+}
+
+.header-player-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.header-player-controls {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.header-player-info {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.artSong-header {
+    margin-left: 200px;
+    margin-bottom: -5px;
+    text-align: left;
+    font-family: 'MyriadPro-Regular', "Arial", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 0 0 #fff;
+}
+
+
+.controls {
+    display: flex;
+    width: 140px;
+    min-height: 50px;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playButton,
+.stepButton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.playButton:hover,
+.stepButton:hover {
+    text-decoration: none;
+    background: #f5f5f5;
+}
+
+.stepButton {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.playButton svg {
+    margin-top: 15px;
+}
+
+.playBtn svg {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.stepButton svg {
+    margin-top: 8px;
+}
+
+.stepBack svg {
+    margin-right: 3px;
+}
+
+.stepForward svg {
+    margin-left: 3px;
+}
+
+.pauseBtn {
+    display:none;
+}
+
+.duration-player {
+    position: relative;
+    height: 9px;
+    margin: 0 10px 0 20px;
+    min-width: 300px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    background-color: #FF940A;
+    z-index: 1;
+}
+
+/* Timer */
+.duration-timer {
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.timer-header:after {
+    content: ' / ';
+    font-size: 16px;
+    white-space: pre;
+}
+
+.volume-header {
+    display: flex;
+    align-items: center;
+}
+
+.muteButton {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+
+.volume-header input[type='range'] {
+    width: 70px;
+    height: 7px;
+    background-color: #fff;
+    margin-right: 10px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.container3 {
+    display: block;
+    min-height: 500px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+.list-song,
+.list-song1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 280px;
+    height: 55px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.list-song:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    outline: none;
+    margin-right: 25px;
+    margin-left: 0;
+    background-position: 55% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #168DE2;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='16' height='16' viewBox='0 0 1792 1792' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1576 927l-1328 738q-23 13-39.5 3t-16.5-36v-1472q0-26 16.5-36t39.5 3l1328 738q23 13 23 31t-23 31z' fill='%23fff'/%3E%3C/svg%3E");
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.list-song1:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    outline: none;
+    margin-right: 25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #168DE2;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='16' height='16' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1664 192v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45zm-896 0v1408q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45v-1408q0-26 19-45t45-19h512q26 0 45 19t19 45z' fill='%23fff'/%3E%3C/svg%3E");
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.download {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    outline: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #168DE2;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='16' height='16' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1344 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm256 0q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128-224v320q0 40-28 68t-68 28h-1472q-40 0-68-28t-28-68v-320q0-40 28-68t68-28h465l135 136q58 56 136 56t136-56l136-136h464q40 0 68 28t28 68zm-325-569q17 41-14 70l-448 448q-18 19-45 19t-45-19l-448-448q-31-29-14-70 17-39 59-39h256v-448q0-26 19-45t45-19h256q26 0 45 19t19 45v448h256q42 0 59 39z' fill='%23fff'/%3E%3C/svg%3E");
+    border-radius: 5%;
 }
 
 

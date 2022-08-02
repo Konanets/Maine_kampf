@@ -44,7 +44,7 @@ function done_task(task_event){
 
 function new_task(){
     let task_block=document.getElementById('task_ul');
-    if(document.querySelectorAll('ul>li.task').length<7) {
+    if(document.querySelectorAll('ul>li.task').length<6) {
         let li=document.createElement('li');
         li.classList.add('task')
         li.innerHTML='<input type="text" maxlength="25" id="Input" class="task_text">\n' +
