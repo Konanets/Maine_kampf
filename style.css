@@ -482,6 +482,10 @@ li{
     align-items: center;
 }
 
+#list{
+    display: flex;
+}
+
 .muteButton {
     display: flex;
     align-items: center;
