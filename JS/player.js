@@ -127,7 +127,7 @@ Player.prototype = {
       }
       // index - индекс трека который сейчас проигрывается
       // По нему стилизуем кнопку трека, который проигрывается, в плейлисте добавляя ей класс list-song1
-      if(i == index) {
+      if(i === index) {
         songLists[i].classList.remove("list-song");
         songLists[i].classList.add("list-song1");
       }
